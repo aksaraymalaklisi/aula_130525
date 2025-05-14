@@ -1,2 +1,2 @@
-# aula_130525
-Aula do dia 13/05/2025
+# Repositório da aula do dia 13/05/2025
+Esse repositório contém apenas um script SQL.
