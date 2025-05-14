@@ -132,7 +132,7 @@ FROM (
 	GROUP BY id_produto
 ) AS subconsulta;
 
--- Professor: "Cria uma tabela temporária chamada subconsulta"alter
+-- "Cria uma tabela temporária chamada subconsulta"
 
 -- Exemplo 5 - Subquery com HAVING
 /* Selecionar os produtos que já venderam mais que a média geral das quantidades
@@ -143,7 +143,7 @@ SELECT * FROM ItensPedido;
 
 -- Consultado a quantidade de produto que contém uma soma de quantidade maior que a média do total de pedidos, 
 -- que é obtida ao realizar a média da subconsulta que possui a soma da quantidade de produtos de cada produto.
--- Ou, na explicação do professor: " Selecionar os produtos que já venderam mais que a média geral das quantidades vendidas por periodo" (período?
+-- Ou, na explicação do professor: " Selecionar os produtos que já venderam mais que a média geral das quantidades vendidas por periodo" (período?)
 SELECT id_produto, SUM(quantidade) as total_vendido FROM ItensPedido
 GROUP BY id_produto
 HAVING SUM(quantidade) > (
