@@ -83,6 +83,7 @@ SELECT MAX(preco) FROM Produtos;
 
 -- Subqueries
 SELECT nome, preco FROM Produtos
-WHERE preco = (SELECT MAX(preco) FROM Produtos);
+WHERE preco > (SELECT AVG(preco) FROM Produtos);
 
 SELECT AVG(preco) as 'Média de preço dos produtos' FROM Produtos;
+
